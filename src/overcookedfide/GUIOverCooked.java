@@ -157,6 +157,7 @@ public class GUIOverCooked extends javax.swing.JFrame {
         jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Ordenes");
 
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Ingredientes faltantes:");
 
         jLabel5.setText("ingrediente");
