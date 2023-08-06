@@ -15,7 +15,7 @@ public class Ingredient {
     String carne;
     String pan;
 
-    public Persona1(String tomate, String lechuga, String carne, String pan) {
+    public Ingredient(String tomate, String lechuga, String carne, String pan) {
         this.tomate = tomate;
         this.lechuga = lechuga;
         this.carne = carne;
