@@ -13,7 +13,7 @@ public class Player {
     String nombre;
     int puntaje;
 
-    public Persona1(String nombre, int puntaje) {
+    public Player(String nombre, int puntaje) {
         this.nombre = nombre;
         this.puntaje = puntaje;
     }
