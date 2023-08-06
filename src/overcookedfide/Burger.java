@@ -14,7 +14,7 @@ public class Burger {
     String ham_queso;
     String ham_clasica;
 
-    public Persona1(String ham_carne, String ham_queso, String ham_clasica) {
+    public Burger(String ham_carne, String ham_queso, String ham_clasica) {
         this.ham_carne = ham_carne;
         this.ham_queso = ham_queso;
         this.ham_clasica = ham_clasica;
