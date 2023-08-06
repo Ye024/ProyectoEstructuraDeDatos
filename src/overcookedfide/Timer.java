@@ -14,7 +14,7 @@ public class Timer {
     int segundos;
     boolean finalizado;
 
-    public Persona1(int minutos, int segundos, boolean finalizado) {
+    public Timer(int minutos, int segundos, boolean finalizado) {
         this.minutos = minutos;
         this.segundos = segundos;
         this.finalizado = finalizado;
