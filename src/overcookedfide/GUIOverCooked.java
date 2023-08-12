@@ -881,6 +881,28 @@ public class GUIOverCooked extends javax.swing.JFrame {
         Thread thread2 = new Thread(cinta::moverCinta);
         thread2.start();
         manejarBoton();
+        
+    }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void btnBasureroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBasureroActionPerformed
+        // TODO add your handling code here:
+        ListaCircularIngredientes IDesechar = new ListaCircularIngredientes();
+        IDesechar.eliminarIngrediente();
+        btn5.setText("");
+        String auxbtn1 = btn1.getText();
+        String auxbtn2 = btn2.getText();
+        String auxbtn3 = btn3.getText();
+        String auxbtn4 = btn4.getText();
+        String auxbtn5 = btn5.getText();
+        btn1.setText(auxbtn5);
+        btn2.setText(auxbtn1);
+        btn3.setText(auxbtn2);
+        btn4.setText(auxbtn3);
+        btn5.setText(auxbtn4);
         if(btn1.getText().equals("")){
             String[] Ingredientes = {"Queso", "Lechuga", "Carne", "Pan"};
             Random random = new Random();
@@ -921,28 +943,6 @@ public class GUIOverCooked extends javax.swing.JFrame {
             cinta.inserta(new Ingredient(ingredienteAleatorio, 1));
             btn1.setText(ingredienteAleatorio);
         }
-    }//GEN-LAST:event_jButton8ActionPerformed
-
-    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton9ActionPerformed
-
-    private void btnBasureroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBasureroActionPerformed
-        // TODO add your handling code here:
-        ListaCircularIngredientes IDesechar = new ListaCircularIngredientes();
-        IDesechar.eliminarIngrediente();
-        btn5.setText("");
-        String auxbtn1 = btn1.getText();
-        String auxbtn2 = btn2.getText();
-        String auxbtn3 = btn3.getText();
-        String auxbtn4 = btn4.getText();
-        String auxbtn5 = btn5.getText();
-        btn1.setText(auxbtn5);
-        btn2.setText(auxbtn1);
-        btn3.setText(auxbtn2);
-        btn4.setText(auxbtn3);
-        btn5.setText(auxbtn4);
-        
     }//GEN-LAST:event_btnBasureroActionPerformed
 
     private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
