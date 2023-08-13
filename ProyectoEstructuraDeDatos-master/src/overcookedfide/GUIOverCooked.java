@@ -32,6 +32,7 @@ public class GUIOverCooked extends javax.swing.JFrame {
     ColaOrden cola = new ColaOrden(this);
     ListaCircularIngredientes cinta = new ListaCircularIngredientes();
     private String ordenactual = "";
+    Player puntos = new Player(null,0);
 
     private ActionListener acciones = new ActionListener() {
         @Override
@@ -81,6 +82,13 @@ public class GUIOverCooked extends javax.swing.JFrame {
                 btn5.setText(ingredienteAleatorio);
             }
         }
+    }
+
+    int puntajeint = puntos.getPuntaje(); //Funcion de Puntaje
+    
+    public void actualizarPuntaje()
+    {
+    puntaje.setText(String.valueOf(puntajeint));
     }
 
     public void actualizarBoton(int numeroBoton, String texto) {
@@ -176,6 +184,7 @@ public class GUIOverCooked extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         lbl_tiempo = new javax.swing.JLabel();
         jButton8 = new javax.swing.JButton();
+        puntaje = new javax.swing.JLabel();
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
