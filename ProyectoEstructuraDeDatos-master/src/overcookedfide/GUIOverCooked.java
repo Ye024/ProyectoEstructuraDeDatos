@@ -362,7 +362,7 @@ public class GUIOverCooked extends javax.swing.JFrame {
 
         jLabel7.setText("Orden actual -->");
 
-        btnBasurero.setText("jButton1");
+        btnBasurero.setText("Botar ingrediente a la izquierda");
         btnBasurero.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBasureroActionPerformed(evt);
