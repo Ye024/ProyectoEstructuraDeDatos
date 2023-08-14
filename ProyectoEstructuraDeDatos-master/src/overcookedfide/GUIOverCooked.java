@@ -185,6 +185,7 @@ public class GUIOverCooked extends javax.swing.JFrame {
         lbl_tiempo = new javax.swing.JLabel();
         jButton8 = new javax.swing.JButton();
         puntaje = new javax.swing.JLabel();
+        EntregaOrden = new javax.swing.JButton();
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
         jPanel5.setLayout(jPanel5Layout);
@@ -206,7 +207,7 @@ public class GUIOverCooked extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Lucida Fax", 1, 24)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Ingredientes");
-
+        EntregaOrden.setText("Entregar Orden");
         btn1.setText("jButton1");
         btn1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1031,7 +1032,43 @@ public class GUIOverCooked extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(GUIOverCooked.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+EntregaOrden.addActionListener(new java.awt.event.ActionListener()
+private void EntregaOrdenActionPerformed(java.awt.event.ActionEvent evt) {                                             
+        // TODO add your handling code here:
+        int mostrarpuntaje = puntos.getPuntaje();
+        if (lbl_ingredientfaltantes.getText().equals("PanCarne")&& lbl_orden1.getText().equalsIgnoreCase("carne - puntos: 5"))
+            {
+            puntos.setPuntaje(mostrarpuntaje+=15);
+            cola.desencolar();
+            lbl_ingredientfaltantes.setText("ingrediente");
+            ordenactual = "";
+            JOptionPane.showConfirmDialog(null, puntaje);
+            }
+        else
+        if (lbl_ingredientfaltantes.getText().equals("PanCarneQueso")&& lbl_orden1.getText().equalsIgnoreCase("Queso - puntos: 10"))
+            {
+            puntos.setPuntaje(mostrarpuntaje+=10);
+            cola.desencolar();
+            lbl_ingredientfaltantes.setText("ingrediente");
+            ordenactual = "";
+            JOptionPane.showConfirmDialog(null, puntaje);
 
+            }
+        else  
+        if (lbl_ingredientfaltantes.getText().equals("PanCarneLechugaQueso")&& lbl_orden1.getText().equalsIgnoreCase("clasica - puntos: 15"))
+            {
+            puntos.setPuntaje(mostrarpuntaje+=15);
+            cola.desencolar();
+            lbl_ingredientfaltantes.setText("ingrediente");
+            ordenactual = "";
+            JOptionPane.showConfirmDialog(null, puntaje);            
+            }
+        else
+        {
+            JOptionPane.showMessageDialog(null, "Orden Incorrecta! :(\n Intenta de nuevo", "title", JOptionPane.INFORMATION_MESSAGE);
+            lbl_ingredientfaltantes.setText("ingrediente");
+            ordenactual = "";
+        }
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
