@@ -15,7 +15,7 @@ public class Player {
 
     public Player(String nombre, int puntaje) {
         this.nombre = nombre;
-        this.puntaje = puntaje;
+        this.puntaje = 0;
     }
 
     public String getNombre() {
