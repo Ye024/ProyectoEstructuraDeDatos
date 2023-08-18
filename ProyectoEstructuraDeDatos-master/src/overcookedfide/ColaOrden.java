@@ -90,14 +90,15 @@ public class ColaOrden {
         NodoOrden current = frente;
         int numeroOrden = 1;
         String lblingredient = "";
-        if (current.getOrden().getTipo().CARNE == TipoHamburguesa.CARNE) {
+        if (current.getOrden().getTipo() == TipoHamburguesa.CARNE) {
             lblingredient = "Ingredientes: -Pan -Carne";
-        }
-        if (current.getOrden().getTipo().QUESO == TipoHamburguesa.QUESO) {
+            
+        }else if (current.getOrden().getTipo() == TipoHamburguesa.QUESO) {
             lblingredient = "Ingredientes: -Pan -Carne -Queso";
-        }
-        if (current.getOrden().getTipo().CLASICA == TipoHamburguesa.CLASICA) {
+            
+        }else if (current.getOrden().getTipo() == TipoHamburguesa.CLASICA) {
             lblingredient = "Ingredientes: -Pan -Carne -Lechuga -Queso";
+            
         }
         mainFrame.actualizarlblingredient(lblingredient);
         while (current != null) {
