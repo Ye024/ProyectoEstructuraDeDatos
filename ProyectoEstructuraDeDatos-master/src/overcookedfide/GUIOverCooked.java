@@ -1037,7 +1037,9 @@ public class GUIOverCooked extends javax.swing.JFrame {
     private void EntregaOrdenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EntregaOrdenActionPerformed
         // TODO add your handling code here:
         int mostrarpuntaje = puntos.getPuntaje();
-        if (lbl_ingredientfaltantes.getText().equals("PanCarne")&& lbl_orden1.getText().equalsIgnoreCase("carne - puntos: 5"))
+        if (lbl_ingredientfaltantes.getText().equals("PanCarne") || 
+            lbl_ingredientfaltantes.getText().equals("CarnePan") && 
+            lbl_orden1.getText().equalsIgnoreCase("carne - puntos: 5"))
             {
             puntos.setPuntaje(mostrarpuntaje+=15);
             cola.desencolar();
@@ -1046,7 +1048,14 @@ public class GUIOverCooked extends javax.swing.JFrame {
             actualizarpuntaje(String.valueOf(puntos.getPuntaje()));
             }
         else
-        if (lbl_ingredientfaltantes.getText().equals("PanCarneQueso")&& lbl_orden1.getText().equalsIgnoreCase("Queso - puntos: 10"))
+        if (lbl_ingredientfaltantes.getText().equals("PanCarneQueso")  || 
+            lbl_ingredientfaltantes.getText().equals("PanCarneQueso") || 
+            lbl_ingredientfaltantes.getText().equals("PanCarneQueso") || 
+            lbl_ingredientfaltantes.getText().equals("CarnePanQueso") || 
+            lbl_ingredientfaltantes.getText().equals("CarneQuesoPan") || 
+            lbl_ingredientfaltantes.getText().equals("QuesoPanCarne") || 
+            lbl_ingredientfaltantes.getText().equals("QuesoCarnePan") && 
+            lbl_orden1.getText().equalsIgnoreCase("Queso - puntos: 10"))
             {
             puntos.setPuntaje(mostrarpuntaje+=10);
             cola.desencolar();
@@ -1056,7 +1065,31 @@ public class GUIOverCooked extends javax.swing.JFrame {
 
             }
         else  
-        if (lbl_ingredientfaltantes.getText().equals("PanCarneLechugaQueso")&& lbl_orden1.getText().equalsIgnoreCase("clasica - puntos: 15"))
+        if (lbl_ingredientfaltantes.getText().equals("PanCarneLechugaQueso") || 
+                lbl_ingredientfaltantes.getText().equals("PanCarneQuesoLechuga") || 
+                lbl_ingredientfaltantes.getText().equals("PanLechugaCarneQueso") || 
+                lbl_ingredientfaltantes.getText().equals("PanLechugaQuesoCarne") || 
+                lbl_ingredientfaltantes.getText().equals("PanQuesoCarneLechuga") || 
+                lbl_ingredientfaltantes.getText().equals("PanQuesoLechugaCarne") || 
+                lbl_ingredientfaltantes.getText().equals("CarnePanLechugaQueso") || 
+                lbl_ingredientfaltantes.getText().equals("CarnePanQuesoLechuga") || 
+                lbl_ingredientfaltantes.getText().equals("CarneLechugaPanQueso") || 
+                lbl_ingredientfaltantes.getText().equals("CarneLechugaQuesoPan") || 
+                lbl_ingredientfaltantes.getText().equals("CarneQuesoPanLechuga") || 
+                lbl_ingredientfaltantes.getText().equals("CarneQuesoLechugaPan") || 
+                lbl_ingredientfaltantes.getText().equals("LechugaPanQuesoCarne") || 
+                lbl_ingredientfaltantes.getText().equals("LechugaPanCarneQueso") || 
+                lbl_ingredientfaltantes.getText().equals("LechugaCarneQuesoPan") || 
+                lbl_ingredientfaltantes.getText().equals("LechugaCarnePanQueso") || 
+                lbl_ingredientfaltantes.getText().equals("LechugaQuesoCarnePan") || 
+                lbl_ingredientfaltantes.getText().equals("LechugaQuesoPanCarne") || 
+                lbl_ingredientfaltantes.getText().equals("QuesoPanCarneLechuga") || 
+                lbl_ingredientfaltantes.getText().equals("QuesoPanLechugaCarne") || 
+                lbl_ingredientfaltantes.getText().equals("QuesoCarnePanLechuga") || 
+                lbl_ingredientfaltantes.getText().equals("QuesoCarneLechugaPan") || 
+                lbl_ingredientfaltantes.getText().equals("QuesoLechugaPanCarne") || 
+                lbl_ingredientfaltantes.getText().equals("QuesoLechugaCarnePan") && 
+                lbl_orden1.getText().equalsIgnoreCase("clasica - puntos: 15"))
             {
             puntos.setPuntaje(mostrarpuntaje+=15);
             cola.desencolar();
