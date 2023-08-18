@@ -1049,7 +1049,7 @@ public class GUIOverCooked extends javax.swing.JFrame {
             }
         else
         if (lbl_ingredientfaltantes.getText().equals("PanCarneQueso")  || 
-            lbl_ingredientfaltantes.getText().equals("PanCarneQueso") || 
+            lbl_ingredientfaltantes.getText().equals("PanQuesoCarne") || 
             lbl_ingredientfaltantes.getText().equals("PanCarneQueso") || 
             lbl_ingredientfaltantes.getText().equals("CarnePanQueso") || 
             lbl_ingredientfaltantes.getText().equals("CarneQuesoPan") || 
