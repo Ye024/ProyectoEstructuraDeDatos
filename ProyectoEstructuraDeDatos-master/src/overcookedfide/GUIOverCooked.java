@@ -1041,7 +1041,7 @@ public class GUIOverCooked extends javax.swing.JFrame {
             lbl_ingredientfaltantes.getText().equals("CarnePan") && 
             lbl_orden1.getText().equalsIgnoreCase("carne - puntos: 5"))
             {
-            puntos.setPuntaje(mostrarpuntaje+=15);
+            puntos.setPuntaje(mostrarpuntaje+=5);
             cola.desencolar();
             lbl_ingredientfaltantes.setText("ingrediente");
             ordenactual = "";
